@@ -5,16 +5,18 @@
 $ npm install
 ```
 
-## Using truffle
-### Install truffle globally
+## Using Truffle
+### Install Truffle globally
 ```
 $ npm install -g truffle
 ```
 
-### Install & run ganache-cli
+### Install & Run ganache-cli
+Running ganache-cli has to be done on a separate terminal
+
 ```
 $ npm install -g ganache-cli
-$ ganache-cli
+$ ganache-cli -e 100000000
 ```
 
 ### compile & migrate
