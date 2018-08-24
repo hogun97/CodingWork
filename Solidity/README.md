@@ -1,4 +1,4 @@
-# Token CrowdSale
+# Solidity & Truffle
 
 ## Install dependencies
 ```
