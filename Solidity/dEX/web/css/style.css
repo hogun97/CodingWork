@@ -1,0 +1,7 @@
+#app {
+  padding: 40px 0;
+}
+
+p {
+  word-break: break-all;
+}

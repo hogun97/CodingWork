@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DEX</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h1>DEX</h1>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="account-address">계정</label>
+              <input type="text" class="form-control" id="account-address"
+                v-model="accountAddress"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contract-address">DEX 주소</label>
+              <input type="text" class="form-control" id="contract-address"
+                v-model="contractAddress"
+              />
+            </div>
+            <div class="form-group">
+              <label for="token-address">토큰 주소</label>
+              <input type="text" class="form-control" id="token-address"
+                v-model="tokenAddress"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="password">패스워드</label>
+              <input type="password" class="form-control" id="password"
+                v-model="password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="token-amount">거래액</label>
+              <input type="text" class="form-control" id="token-amount"
+                v-model="amount"
+              />
+            </div>
+            <div class="form-group">
+              <label>잔액</label>
+              <input type="text" class="form-control" v-model="balance" readonly />
+            </div>
+            <div class="form-group">
+              <label>거래한도</label>
+              <input type="text" class="form-control" v-model="allowance" readonly />
+            </div>
+            <div>
+              {{ message }}
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-right">
+            <button class="btn btn-primary" @click="approve">Approve</button>
+            <button class="btn btn-primary" @click="submit">Participate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
